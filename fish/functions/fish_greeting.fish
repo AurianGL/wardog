@@ -22,6 +22,28 @@ function fish_greeting
         "Anch'io ti amo" \
         "Time stands still around me" \
         "Teardrops feel like showers"
+
+    set howbad \
+        "> Your spotify was middle-school-warped-tour-succulent-growing-indie-pop-make-beats-in-your-mom's-basement bad." \
+        "> classic-rock-radio-station bad" \
+        "> wore-spray-paint-respirator-non-ironically bad" \
+        "> let's-do-this-one-more-time bad" \
+        "> put-it-into-speed-drive bad" \
+        "> shouting-jibberish-to-chop-suey bad" \
+        "> adult-skateboarder-dads-still-cool-make-beats-in-your-mom's-basement bad" \
+        "> 60-dollar-white-tshirt bad" \
+        "> ufo-truther bad" \
+        '> I-have-a-lot-of-opinions-about-the-new-Star-Wars-movies bad' \
+        '> napping-in-your-mancave bad' \
+        '> proud-of-travis-for-flying-again bad' \
+        '> time-traveling-back-to-when-flip-phones-were-cool bad' \
+        "> I'm-just-here-for-the-ride bad" \
+        'I need to go recalibrate my taste levels.' \
+        "You're too trendy for your own good" \
+        "You are 3% basic." \
+        "Oh wow Born Gold and ORTIES!" \
+        "Your taste is so obscure that's so cool I bet you're super interesting."
+
     set colors \
         red \
         green \
@@ -34,9 +56,9 @@ function fish_greeting
         bryellow \
         brblue \
         brmagenta \
-        brcyan 
-    set danny (random)"%"(count $harlecore)
-    set danny $harlecore[(math $danny"+1")]
+        brcyan
+    set danny (random)"%"(count $howbad)
+    set danny $howbad[(math $danny"+1")]
     set color (random)"%"(count $colors)
     set color $colors[(math $color"+1")]
     printf (set_color white)"wise Daemon says :\n%s\n" (set_color $color)$danny
